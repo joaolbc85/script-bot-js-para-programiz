@@ -1,0 +1,101 @@
+//Protótipo de bot javascript - programiz
+console.log("criador: joaolbc", "\n")
+
+
+let nome = prompt("escreva seu nome ")
+let idade = prompt("escreva sua idade ")
+
+let continuar = true;
+
+while (continuar) {
+
+let comandos = prompt("escreva o seu comando(exemplo: !linguiça, !comandos ou !abacaxi) ")
+
+if(comandos === '!abacaxi'){
+console.log("\n", "ronaldo", "\n");
+}
+
+else if(comandos === '!linguiça'){
+console.log("\n",431, "\n");
+}
+
+else if(comandos === '!thiago'){
+console.log("\n","thirrasguinho", "\n");
+}
+
+else if(comandos === '!kojima'){
+    console.log("\n","kojima o que você fez: https://www.youtube.com/watch?v=f-nnv_9N6s8", "\n");
+    
+}
+
+else if(comandos === '!cringe'){
+console.log("\n","saturou", "\n");
+}
+
+else if(comandos === '!idade'){
+console.log("\n", "sua idade é", idade*idade, "\n");
+}
+
+else if (comandos === '!nome') {
+    let nomeInvertido = nome.split('').reverse().join('');
+    
+    console.log("\n", "Seu nome ao contrário é: ", nomeInvertido, "\n");
+  }
+
+else if(comandos === '!crush'){
+    
+    let numeroAleatorio = Math.floor(Math.random() * 101);
+
+    let crush = prompt("Qual o nome do seu crush? ")
+    console.log("\n","a chance de", nome,"e", crush, "namorarem é", numeroAleatorio, "%", "\n");
+}
+
+else if(comandos === '!xp'){
+    let numeroXp = Math.floor(Math.random() * 401);
+    console.log("\n", "o seu xp atual é", numeroXp,"\n");
+}
+
+else if(comandos === '!ata'){
+    console.log("\n","https://upload.wikimedia.org/wikipedia/pt/1/14/Ata_meme.jpg","\n");
+    
+}
+
+else if (comandos === '!1d100') {
+  let primeiroDado = Math.floor(Math.random() * 101);
+  console.log("\n", "O seu resultado foi: ", primeiroDado, "\n");
+}
+
+else if(comandos === '!marina') {
+    console.log("\n", "nunuca", "\n")
+}
+else if(comandos === '!idaderetangulo'){
+    console.log(`
+    ${idade ** 1}
+    ${idade ** 2} ${idade ** 2}
+    ${idade ** 3} ${idade ** 3} ${idade ** 3}
+    ${idade ** 4} ${idade ** 4} ${idade ** 4}
+    ${idade ** 5} ${idade ** 5} ${idade ** 5} ${idade ** 5}
+    ${idade ** 6} ${idade ** 6} ${idade ** 6} ${idade ** 6} ${idade ** 6}
+                 `);
+}
+else if(comandos === '!comandos'){
+    console.log(`
+                 !abacaxi
+                 !linguiça
+                 !1d100
+                 !ata
+                 !kojima
+                 !crush
+                 !cringe
+                 !thiago
+                 !marina
+                 !idade
+                 !nome
+                 !xp
+                 !idaderetangulo
+                 `)
+}
+else{
+console.log("\n", "comando desconhecido, tente novamente ex: !abacaxi ou !linguiça ", "\n", );
+}
+} 
