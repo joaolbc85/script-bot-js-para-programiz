@@ -93,9 +93,16 @@ else if(comandos === '!comandos'){
                  !nome
                  !xp
                  !idaderetangulo
+                 !sair
                  `)
+                 
 }
+else if (comandos === '!sair') {
+    continuar = false;
+    console.log("Bot desligado. Até a próxima!");
+}
+
 else{
 console.log("\n", "comando desconhecido, tente novamente ex: !abacaxi ou !linguiça ", "\n", );
 }
-} 
+}
